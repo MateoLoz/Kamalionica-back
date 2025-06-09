@@ -19,14 +19,13 @@ app.get('/',(req,res)=> {
 
 
 
-
-  app.listen(config.port, async ()=> {
-    try {
+if (process.env.NODE_ENV !== 'test') {
+  try {
      await mongooseConection()
      console.log(`server is running! on port ${config.port} 🎉`)
    } catch(err) {
     console.log(err.message)
     }
-  })
-
+}
+ 
 export default app;
