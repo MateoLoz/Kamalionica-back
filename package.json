@@ -1,0 +1,27 @@
+{
+  "name": "kamalionica-back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx mocha ./src/test/integration/api.test.js",
+    "start": "node --watch ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "chai-http": "^5.1.2",
+    "eslint": "^9.28.0",
+    "globals": "^16.2.0",
+    "mocha": "^11.6.0"
+  }
+}
