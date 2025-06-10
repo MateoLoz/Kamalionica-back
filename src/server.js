@@ -11,21 +11,28 @@ app.use(cors({
     origin: '*',
     methods: 'GET, POST'
 }))
-app.use('/api',Router)
+ app.use('/api',Router)
 
 app.get('/',(req,res)=> {
+    console.log('hi')
     res.status(200).send('working!')
 })
 
 
-
 if (process.env.NODE_ENV !== 'test') {
-  try {
-     await mongooseConection()
-     console.log(`server is running! on port ${config.port} 🎉`)
-   } catch(err) {
-    console.log(err.message)
+  const startServer = async () => {
+    try {
+      await mongooseConection();
+      app.listen(config.port, () => {
+        console.log(`Server is running on port ${config.port} 🎉`);
+      });
+    } catch (err) {
+      console.error('Failed to connect to the database:', err.message);
     }
+  };
+
+  startServer();
 }
+
  
 export default app;

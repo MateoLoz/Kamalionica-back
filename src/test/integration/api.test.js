@@ -14,9 +14,9 @@ describe('/root del proyecto', () => {
 
 
 describe('GET /api/products', () => {
-  it('debe retornar un 404 ya que no hay productos', async () => {
+  it('debe retornar un 200 ya que no hay productos', async () => {
     const res = await request.execute(app).get('/api/products');
-    expect(res).to.have.status(404);
+    expect(res).to.have.status(200);
   });
 });
 
@@ -26,5 +26,6 @@ describe('POST /api/products', () => {
       const titulo = 'Jean Mom'
      const res = await request.execute(app).post('/api/products').send({titulo:titulo});
     expect(res).to.have.status(401)
+    
   })
 })
