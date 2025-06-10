@@ -19,16 +19,20 @@ app.get('/',(req,res)=> {
 })
 
 
-
-app.listen(config.port, async () => {
-  try {
-     await mongooseConection()
-     console.log(`server is running! on port ${config.port} 🎉`)
-   } catch(err) {
-    console.log(err.message)
+if (process.env.NODE_ENV !== 'test') {
+  const startServer = async () => {
+    try {
+      await mongooseConection();
+      app.listen(config.port, () => {
+        console.log(`Server is running on port ${config.port} 🎉`);
+      });
+    } catch (err) {
+      console.error('Failed to connect to the database:', err.message);
     }
-})
+  };
 
+  startServer();
+}
 
  
 export default app;
