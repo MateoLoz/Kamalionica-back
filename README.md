@@ -1,38 +1,39 @@
 # Kamalionica Back-end Layer
 
 ## Routes
-- api/products
-- api/pedidos
+- `/api/products`
+- `/api/pedidos`
 
 ---
 
-## api/products
+## `api/products`
 
-- GET https://kamalionica-back.onrender.com/api/products
-- POST https://kamalionica-back.onrender.com/api/products
+- **GET** https://kamalionica-back.onrender.com/api/products  
+- **POST** https://kamalionica-back.onrender.com/api/products
+
+### 📨 POST body example (`/api/products`)
+```json
+{
+  "titulo": "ejemplo titulo",
+  "imagen": [
+    "https://ejemploimagen.jpg",
+    "https://ejemploimagen2.jpg"
+  ],
+  "info": "informacion corta ejemplo",
+  "descripcion": "informacion mas detallada larga ejemplo.",
+  "precio": 90000,
+  "talles": [24, 26, 28, 30]
+}
+
+## `api/pedidos`
+- **GET** https://kamalionica-back.onrender.com/api/pedidos
+- **POST** https://kamalionica-back.onrender.com/api/pedidos
 
 ---
-## POST format Example api/products 
+### 📨 POST body example (`/api/pedidos`)
 
-  ```json - {
-    "titulo": 
-    "ejemoplo titulo",
-    "imagen": [ "https://ejemploimagen.jpg","https://ejemploimagen2.jpg" ],
-    "info": "informacion corta ejemplo",
-    "descripcion": "informacion mas detallada larga ejemplo.",
-    "precio": 90000,
-    "talles": [24, 26, 28, 30] 
-    }
-    ``` 
----
-## api/pedidos
-- GET https://kamalionica-back.onrender.com/api/pedidos
-- POST https://kamalionica-back.onrender.com/api/pedidos
-
----
-## POST format Example api/pedidos
-
- ```json - {
+ ```json
+{
     "carrito": {
         "items": [
             {
@@ -49,5 +50,5 @@
      "direccion":"Mi casa 123"
     }
 } 
-```
+
 
