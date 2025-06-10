@@ -14,7 +14,15 @@
 ---
 ## POST format Example api/products 
 
-<pre> ```json { "titulo": "ejemoplo titulo", "imagen": [ "https://ejemploimagen.jpg", "https://ejemploimagen2.jpg" ], "info": "informacion corta ejemplo", "descripcion": "informacion mas detallada larga ejemplo.", "precio": 90000, "talles": [24, 26, 28, 30] } ``` </pre>
+<pre> ``` {
+    "titulo": 
+    "ejemoplo titulo",
+    "imagen": [ "https://ejemploimagen.jpg","https://ejemploimagen2.jpg" ],
+    "info": "informacion corta ejemplo",
+    "descripcion": "informacion mas detallada larga ejemplo.",
+    "precio": 90000,
+    "talles": [24, 26, 28, 30] }
+    ``` </pre>
 
 ---
 ## api/pedidos
