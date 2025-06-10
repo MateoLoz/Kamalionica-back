@@ -14,7 +14,7 @@
 ---
 ## POST format Example api/products 
 
-<pre> ``` {
+<pre> {
     "titulo": 
     "ejemoplo titulo",
     "imagen": [ "https://ejemploimagen.jpg","https://ejemploimagen2.jpg" ],
@@ -22,7 +22,7 @@
     "descripcion": "informacion mas detallada larga ejemplo.",
     "precio": 90000,
     "talles": [24, 26, 28, 30] }
-    ``` </pre>
+    </pre>
 
 ---
 ## api/pedidos
@@ -32,7 +32,7 @@
 ---
 ## POST format Example api/pedidos
 
-<pre>```json {
+<pre> {
     "carrito": {
         "items": [
             {
@@ -48,4 +48,4 @@
     "email":"mateobinance1@gmail.com",
      "direccion":"Mi casa 123"
     }
-}  </pre>
+} </pre>
