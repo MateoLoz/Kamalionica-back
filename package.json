@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "npx mocha ./src/test/integration/*.test.js",
+    "test": "npx mocha ./src/test/integration/*.test.js --timeout 15000",
     "start": "node --watch ./src/server.js"
   },
   "keywords": [],

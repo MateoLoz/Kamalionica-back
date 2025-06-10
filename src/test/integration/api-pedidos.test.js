@@ -4,6 +4,14 @@ import app from '../../server.js';
 chai.use(chaiHttp);
 const expect = chai.expect;
 
+describe('/root del proyecto', () => {
+  it('debe retornar un 200 si el servidor se levanta correctamente', async ()=> {
+     const res = await request.execute(app).get('/');
+    expect(res).to.have.status(200);
+  })
+})
+
+
 describe("GET pedidos", async () => {
 it("se busca que al hacer una peticion get se obtengan todos los pedidos", async () => {
      const res = await request.execute(app).get('/api/pedidos');
