@@ -24,7 +24,7 @@
     "talles": [24, 26, 28, 30] 
     }
     ``` 
-
+-
 ---
 ## api/pedidos
 - GET https://kamalionica-back.onrender.com/api/pedidos
@@ -50,3 +50,4 @@
      "direccion":"Mi casa 123"
     }
 } ```
+-
