@@ -13,8 +13,8 @@
 
 ---
 ## POST format Example api/products 
-
- - ```json {
+-
+  ```json {
     "titulo": 
     "ejemoplo titulo",
     "imagen": [ "https://ejemploimagen.jpg","https://ejemploimagen2.jpg" ],
@@ -24,7 +24,6 @@
     "talles": [24, 26, 28, 30] 
     }
     ``` 
--
 ---
 ## api/pedidos
 - GET https://kamalionica-back.onrender.com/api/pedidos
@@ -32,8 +31,8 @@
 
 ---
 ## POST format Example api/pedidos
-
-- ```json {
+-
+ ```json {
     "carrito": {
         "items": [
             {
@@ -50,4 +49,4 @@
      "direccion":"Mi casa 123"
     }
 } ```
--
+
