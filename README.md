@@ -14,7 +14,7 @@
 ---
 ## POST format Example api/products 
 
- ```json {
+ - ```json {
     "titulo": 
     "ejemoplo titulo",
     "imagen": [ "https://ejemploimagen.jpg","https://ejemploimagen2.jpg" ],
@@ -33,7 +33,7 @@
 ---
 ## POST format Example api/pedidos
 
-```json {
+- ```json {
     "carrito": {
         "items": [
             {
