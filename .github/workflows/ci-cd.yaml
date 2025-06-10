@@ -5,9 +5,11 @@ on:
     branches:
       - main
       - develop
+      - feature-pedidos
   pull_request:
     branches:
       - develop
+      - feature-pedidos
 
 jobs:
   test:

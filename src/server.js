@@ -11,21 +11,24 @@ app.use(cors({
     origin: '*',
     methods: 'GET, POST'
 }))
-app.use('/api',Router)
+ app.use('/api',Router)
 
 app.get('/',(req,res)=> {
+    console.log('hi')
     res.status(200).send('working!')
 })
 
 
 
-if (process.env.NODE_ENV !== 'test') {
+app.listen(config.port, async () => {
   try {
      await mongooseConection()
      console.log(`server is running! on port ${config.port} 🎉`)
    } catch(err) {
     console.log(err.message)
     }
-}
+})
+
+
  
 export default app;
